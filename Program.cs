@@ -21,10 +21,23 @@ namespace MavPASS_CIS122_20210928
 			Inventory.Add(new Shirt());
 			Inventory.Add(new Shirt());
 
-			foreach(Clothing c in Inventory)
+			Inventory.Add(new Pants());
+			Inventory.Add(new Pants());
+			Inventory.Add(new Pants());
+
+			Inventory.Add(new Socks());
+			Inventory.Add(new Socks());
+			Inventory.Add(new Socks());
+			Inventory.Add(new Socks());
+			Inventory.Add(new Socks());
+			Inventory.Add(new Socks());
+			Inventory.Add(new Socks());
+
+			foreach (Clothing c in Inventory)
 			{
 				Console.WriteLine(c.ToString());
 				c.Fold();
+				Console.WriteLine("==================================================\n");
 			}
 
 			Console.ReadLine();

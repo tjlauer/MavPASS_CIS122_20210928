@@ -10,34 +10,30 @@ using System.Threading.Tasks;
 
 namespace MavPASS_CIS122_20210928
 {
-	public sealed class Shirt : Clothing
+	public sealed class Socks : Clothing
 	{
 		// Variables
 		private string size = "n/a";
-		private string design = "n/a";
-		private string type = "n/a";
+		private string style = "n/a";
 
 		// Properties
 		public string Size { get { return this.size; } set { this.size = value; } }
-		public string Design { get { return this.design; } set { this.design = value; } }
-		public string Type { get { return this.type; } set { this.type = value; } }
+		public string Style { get { return this.style; } set { this.style = value; } }
 
 		// Constructors
-		public Shirt() : this("n/a", "n/a", "n/a", -1, "n/a", "n/a", "n/a", "n/a", Double.MaxValue) { }
+		public Socks() : this("n/a", "n/a", -1, "n/a", "n/a", "n/a", "n/a", Double.MaxValue) { }
 
-		public Shirt(string aSize, string aDesign, string aType, int anId, string aCategory, string aBrand, string aColor, string aMaterial, double aPrice) : 
+		public Socks(string aSize, string aStyle, int anId, string aCategory, string aBrand, string aColor, string aMaterial, double aPrice) :
 			base(anId, aCategory, aBrand, aColor, aMaterial, aPrice)
 		{
 			this.Size = aSize;
-			this.Design = aDesign;
-			this.Type = aType;
-
+			this.Style = aStyle;
 		}
 
 		// Methods
 		public override void Fold()
 		{
-			Console.WriteLine("Folding a shirt.\n");
+			Console.WriteLine("Folding a pair of socks.\n");
 		}
 
 		public override string ToString()
@@ -46,8 +42,7 @@ namespace MavPASS_CIS122_20210928
 			msg += base.ToString();
 			msg += "\n";
 			msg += "Size: " + this.Size + "\n";
-			msg += "Design: " + this.Design + "\n";
-			msg += "Type: " + this.Type + "\n";
+			msg += "Design: " + this.Style + "\n";
 			return msg;
 		}
 	}
