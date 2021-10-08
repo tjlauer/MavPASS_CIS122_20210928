@@ -18,7 +18,7 @@ The code we wrote during the session touches on the following...<br><br>
 
 <hr>
 
-As always, if you have any question please send me an email at thomas.lauer@mnsu.edu.
+As always, if you have any questions please send me an email at thomas.lauer@mnsu.edu.
 
 Best of luck on the quiz, and I will see you on Thursday for some more logic problems!
 
